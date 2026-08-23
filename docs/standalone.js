@@ -233,10 +233,10 @@ Evidence rules:
   // ---------- OpenAI / NVIDIA ----------
   const isNvidiaKey = (k) => typeof k === "string" && k.trim().startsWith("nvapi-");
   const OAI_URL = "https://api.openai.com/v1/responses";
-  const NV_CHAT_URL = (!NATIVE && (location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+  const NV_CHAT_URL = !NATIVE
     ? "/api/nvidia/v1/chat/completions"
     : "https://integrate.api.nvidia.com/v1/chat/completions";
-  const NV_MODELS_URL = (!NATIVE && (location.hostname === "localhost" || location.hostname === "127.0.0.1"))
+  const NV_MODELS_URL = !NATIVE
     ? "/api/nvidia/v1/models"
     : "https://integrate.api.nvidia.com/v1/models";
   const authHeaders = () => ({ "Content-Type": "application/json", "Authorization": `Bearer ${S.key}` });

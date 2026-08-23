@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "outputDirectory": "docs",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/nvidia/:path*",
+      "destination": "https://integrate.api.nvidia.com/:path*"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/sources",
+      "destination": "/sources.html"
+    }
+  ]
+}

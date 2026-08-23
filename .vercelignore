@@ -1,0 +1,8 @@
+server.py
+tests/
+tools/
+eval/
+android-app/
+requirements.txt
+make_icons.py
+make_tenders_json.py

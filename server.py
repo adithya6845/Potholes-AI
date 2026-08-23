@@ -86,6 +86,14 @@ class ProxyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
             except Exception:
                 pass
 
+def app(environ, start_response):
+    status = '200 OK'
+    response_headers = [('Content-type', 'text/plain; charset=utf-8')]
+    start_response(status, response_headers)
+    return [b"PotholePulse Server"]
+
+handler = app
+
 if __name__ == "__main__":
     http.server.ThreadingHTTPServer.allow_reuse_address = True
     with http.server.ThreadingHTTPServer(("", PORT), ProxyHTTPRequestHandler) as httpd:
