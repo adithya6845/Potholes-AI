@@ -1,0 +1,13 @@
+{
+  "appId": "com.adithya.potholereporter",
+  "appName": "PotholePulse",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+# Secrets and personal data: never commit
+.env
+reports.db
+photos/
+
+# Build tooling and outputs
+.venv/
+node_modules/
+android-app/android/.gradle/
+android-app/android/build/
+android-app/android/app/build/
+android-app/android/local.properties
+android-app/android/keystore.properties
+android-app/android/*.jks
+android-app/android/*.keystore
+*.apk
+*.aab
+*.log
+.DS_Store
+eval/images/
+eval/results/
